@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact â€” Reliable Trend Enterprises LLC</title>
+  <meta name="description" content="Get in touch with Reliable Trend Enterprises LLC. Questions about ZeroStick, BudBox, or an order? We're here to help." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="mark">RTE</span>
+        Reliable Trend Enterprises
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="brands.html">Our Brands</a>
+        <a href="contact.html" class="active">Contact</a>
+        <a href="brands.html" class="btn btn-gold" style="padding:8px 20px;">Shop</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Get in Touch</span>
+      <h1>Contact Us</h1>
+      <p>Questions about a product or an order? Drop us a line â€” we read every message.</p>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT FORM ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="form-wrap">
+        <!-- This form opens the visitor's email app pre-filled (see script.js).
+             No backend server is required for it to work. -->
+        <form onsubmit="sendContact(event)">
+          <div class="field">
+            <label for="cName">Your Name</label>
+            <input type="text" id="cName" required placeholder="Jane Doe" />
+          </div>
+          <div class="field">
+            <label for="cEmail">Your Email</label>
+            <input type="email" id="cEmail" required placeholder="jane@example.com" />
+          </div>
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" required placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-gold" style="width:100%;">Send Message</button>
+        </form>
+
+        <p style="text-align:center; color:var(--text-dim); margin-top:24px; font-size:0.9rem;">
+          Or email us directly at
+          <a href="mailto:reliabletrendenterprises@gmail.com" style="color:var(--gold); text-decoration:underline;">reliabletrendenterprises@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="nav-brand" style="margin-bottom:16px;">
+            <span class="mark">RTE</span> Reliable Trend Enterprises
+          </div>
+          <p>The parent company behind ZeroStick, BudBox, and more. Trends you can trust â€” built and sold direct.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="brands.html">Our Brands</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="delete-data.html">Delete My Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Reliable Trend Enterprises LLC. All rights reserved.</span>
+        <span>reliabletrendenterprises@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
