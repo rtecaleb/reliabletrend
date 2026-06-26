@@ -3,52 +3,155 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Reliable Trend Enterprises LLC</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Arial, sans-serif; background: #f9f9f9; color: #222; min-height: 100vh; display: flex; flex-direction: column; }
-    header { background: #fff; border-bottom: 1px solid #e0e0e0; padding: 18px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
-    header .brand { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase; color: #111; text-decoration: none; }
-    nav a { text-decoration: none; color: #444; font-size: 0.9rem; margin-left: 24px; transition: color 0.2s; }
-    nav a:hover { color: #000; }
-    .hero { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 80px 24px; }
-    .hero h1 { font-size: 2.8rem; font-weight: 800; letter-spacing: -0.02em; text-transform: uppercase; color: #111; margin-bottom: 16px; }
-    .hero p { font-size: 1.2rem; color: #555; margin-bottom: 40px; }
-    .hero .cta { display: inline-block; background: #111; color: #fff; padding: 14px 36px; border-radius: 4px; text-decoration: none; font-size: 0.95rem; font-weight: 600; letter-spacing: 0.04em; transition: background 0.2s; }
-    .hero .cta:hover { background: #333; }
-    .contact { background: #fff; border-top: 1px solid #e0e0e0; padding: 60px 24px; text-align: center; }
-    .contact h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 10px; }
-    .contact p { color: #555; margin-bottom: 20px; font-size: 1rem; }
-    .contact a { color: #111; font-weight: 600; text-decoration: underline; }
-    footer { background: #111; color: #aaa; text-align: center; padding: 20px 24px; font-size: 0.82rem; }
-    footer a { color: #ccc; text-decoration: none; margin: 0 10px; }
-    footer a:hover { color: #fff; }
-  </style>
+  <title>Reliable Trend Enterprises LLC â€” Trends You Can Trust</title>
+  <meta name="description" content="Reliable Trend Enterprises LLC is the parent company behind ZeroStick, BudBox, and more â€” building and selling trusted products direct to you." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
-    <a class="brand" href="/">Reliable Trend Enterprises LLC</a>
-    <nav>
-      <a href="/">Home</a>
-      <a href="/privacy-policy.html">Privacy Policy</a>
-      <a href="/delete-data.html">Delete My Data</a>
-    </nav>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="mark">RTE</span>
+        Reliable Trend Enterprises
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+        <a href="brands.html">Our Brands</a>
+        <a href="contact.html">Contact</a>
+        <a href="brands.html" class="btn btn-gold" style="padding:8px 20px;">Shop</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    </div>
   </header>
+
+  <!-- ===================== HERO ===================== -->
   <section class="hero">
-    <h1>Reliable Trend Enterprises LLC</h1>
-    <p>Trends You Can Trust</p>
-    <a class="cta" href="#contact">Contact Us</a>
+    <div class="container">
+      <span class="eyebrow">Reliable Trend Enterprises LLC</span>
+      <h1>Trends You Can Trust</h1>
+      <p>
+        The parent company behind a family of independent brands. We design,
+        build, and sell premium products direct to you â€” backed by one name
+        you can rely on.
+      </p>
+      <div class="hero-actions">
+        <a href="brands.html" class="btn btn-gold">Explore Our Brands</a>
+        <a href="about.html" class="btn btn-ghost">Who We Are</a>
+      </div>
+    </div>
   </section>
-  <section class="contact" id="contact">
-    <h2>Contact Us</h2>
-    <p>Drop us a line!</p>
-    <a href="mailto:reliabletrendenterprises@gmail.com">reliabletrendenterprises@gmail.com</a>
+
+  <!-- ===================== WHY RTE ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why Reliable Trend</span>
+        <h2>One company. Built on trust.</h2>
+        <p>Every brand under our roof shares the same standard for quality, support, and honesty.</p>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="icon">&#9733;</div>
+          <h3>Premium Quality</h3>
+          <p>Every product is built and tested to a standard we'd stake our name on â€” because we do.</p>
+        </div>
+        <div class="card">
+          <div class="icon">&#128230;</div>
+          <h3>Direct to You</h3>
+          <p>We sell straight from the source through our own stores and e-commerce â€” no middlemen.</p>
+        </div>
+        <div class="card">
+          <div class="icon">&#128274;</div>
+          <h3>Secure Checkout</h3>
+          <p>Payments are processed through trusted, encrypted providers. Your information stays safe.</p>
+        </div>
+        <div class="card">
+          <div class="icon">&#128172;</div>
+          <h3>Real Support</h3>
+          <p>Questions or issues? You reach actual humans who stand behind what we sell.</p>
+        </div>
+      </div>
+    </div>
   </section>
-  <footer>
-    <p>&copy; 2026 Reliable Trend Enterprises LLC &nbsp;|&nbsp;
-      <a href="/privacy-policy.html">Privacy Policy</a>
-      <a href="/delete-data.html">Delete My Data</a>
-    </p>
+
+  <!-- ===================== BRANDS PREVIEW ===================== -->
+  <section class="section alt-bg">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Our Family of Brands</span>
+        <h2>The brands under RTE</h2>
+        <p>Independent products, unified by one trusted parent company.</p>
+      </div>
+      <div class="grid">
+
+        <div class="card brand-card">
+          <span class="tag">Gaming</span>
+          <h3>ZeroStick</h3>
+          <p>Precision-modified controllers for serious players. Genuine hardware, expertly upgraded for performance you can feel.</p>
+          <a href="brands.html#zerostick" class="btn btn-ghost" style="margin-top:18px;">View ZeroStick</a>
+        </div>
+
+        <div class="card brand-card">
+          <span class="tag">Lifestyle</span>
+          <h3>BudBox</h3>
+          <p>Curated essentials delivered in a box worth opening. Quality goods, thoughtfully selected.</p>
+          <a href="brands.html#budbox" class="btn btn-ghost" style="margin-top:18px;">View BudBox</a>
+        </div>
+
+        <div class="card brand-card">
+          <span class="tag">Coming Soon</span>
+          <h3>More on the way</h3>
+          <p>RTE is always building. New brands and products join the family as we grow.</p>
+          <a href="contact.html" class="btn btn-ghost" style="margin-top:18px;">Get Notified</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CTA BAND ===================== -->
+  <section class="section">
+    <div class="container" style="text-align:center;">
+      <div class="section-head" style="margin-bottom:28px;">
+        <h2>Ready to shop?</h2>
+        <p>Browse our brands and check out securely in just a few clicks.</p>
+      </div>
+      <a href="brands.html" class="btn btn-gold">Shop All Brands</a>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="nav-brand" style="margin-bottom:16px;">
+            <span class="mark">RTE</span> Reliable Trend Enterprises
+          </div>
+          <p>The parent company behind ZeroStick, BudBox, and more. Trends you can trust â€” built and sold direct.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="brands.html">Our Brands</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="delete-data.html">Delete My Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Reliable Trend Enterprises LLC. All rights reserved.</span>
+        <span>reliabletrendenterprises@gmail.com</span>
+      </div>
+    </div>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
