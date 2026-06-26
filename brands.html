@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Brands &mdash; Reliable Trend Enterprises LLC</title>
+  <meta name="description" content="Shop ZeroStick, BudBox, and more &mdash; all from Reliable Trend Enterprises LLC. Secure checkout." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
 
+  <!-- ===================== NAVBAR ===================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-brand">
+        <span class="mark">RTE</span>
+        Reliable Trend Enterprises
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="brands.html" class="active">Our Brands</a>
+        <a href="contact.html">Contact</a>
+        <a href="brands.html" class="btn btn-gold" style="padding:8px 20px;">Shop</a>
+      </nav>
+      <button class="nav-toggle" onclick="toggleMenu()" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- ===================== PAGE HEADER ===================== -->
+  <section class="page-head">
+    <div class="container">
+      <span class="eyebrow">Shop RTE</span>
+      <h1>Our Brands</h1>
+      <p>Independent products, one trusted parent company. Secure checkout on every order.</p>
+    </div>
+  </section>
+
+  <!-- ===================== ZEROSTICK ===================== -->
+  <section class="section" id="zerostick">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Gaming</span>
+        <h2>ZeroStick</h2>
+        <p>Precision-modified controllers built on genuine hardware &mdash; upgraded for performance you can feel.</p>
+      </div>
+      <div class="grid">
+
+        <!-- PRODUCT CARD -------------------------------------------------
+             To take a real payment:
+             1. In your Stripe dashboard, create a "Payment Link" for this product.
+             2. Stripe gives you a URL like https://buy.stripe.com/xxxxxxxx
+             3. Replace the "#" in href below with that URL.
+             The button then opens Stripe's secure checkout. No code needed. -->
+        <div class="card brand-card">
+          <span class="tag">Best Seller</span>
+          <h3>ZeroStick Pro Controller</h3>
+          <p>Tournament-grade modified controller. Genuine base hardware with precision stick upgrades.</p>
+          <div class="price">$149.99</div>
+          <a href="#" class="btn btn-gold" style="width:100%; text-align:center;">Buy Now</a>
+        </div>
+
+        <div class="card brand-card">
+          <span class="tag">New</span>
+          <h3>ZeroStick Elite Edition</h3>
+          <p>Our top-tier build with premium components and custom tuning for competitive play.</p>
+          <div class="price">$199.99</div>
+          <a href="#" class="btn btn-gold" style="width:100%; text-align:center;">Buy Now</a>
+        </div>
+
+        <div class="card brand-card">
+          <span class="tag">Accessory</span>
+          <h3>ZeroStick Carry Case</h3>
+          <p>Protective hard-shell case to keep your controller safe on the go.</p>
+          <div class="price">$29.99</div>
+          <a href="#" class="btn btn-gold" style="width:100%; text-align:center;">Buy Now</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUDBOX ===================== -->
+  <section class="section alt-bg" id="budbox">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Lifestyle</span>
+        <h2>BudBox</h2>
+        <p>Curated essentials, delivered in a box worth opening. Quality goods, thoughtfully selected.</p>
+      </div>
+      <div class="grid">
+
+        <div class="card brand-card">
+          <span class="tag">Popular</span>
+          <h3>BudBox Starter</h3>
+          <p>A curated selection of our essentials &mdash; the perfect introduction to BudBox.</p>
+          <div class="price">$39.99</div>
+          <a href="#" class="btn btn-gold" style="width:100%; text-align:center;">Buy Now</a>
+        </div>
+
+        <div class="card brand-card">
+          <span class="tag">Best Value</span>
+          <h3>BudBox Premium</h3>
+          <p>Our full premium box, packed with top-tier curated goods.</p>
+          <div class="price">$69.99</div>
+          <a href="#" class="btn btn-gold" style="width:100%; text-align:center;">Buy Now</a>
+        </div>
+
+        <div class="card brand-card">
+          <span class="tag">Subscription</span>
+          <h3>BudBox Monthly</h3>
+          <p>A fresh curated box delivered to your door every month. Cancel anytime.</p>
+          <div class="price">$59.99/mo</div>
+          <a href="#" class="btn btn-gold" style="width:100%; text-align:center;">Subscribe</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PAYMENT NOTE ===================== -->
+  <section class="section">
+    <div class="container" style="text-align:center; max-width:680px;">
+      <div class="icon" style="margin:0 auto 18px; width:54px; height:54px; display:flex; align-items:center; justify-content:center; background:rgba(201,162,75,0.12); border-radius:10px; font-size:1.6rem;">&#128274;</div>
+      <h2 style="font-size:1.6rem; margin-bottom:12px;">Secure Checkout</h2>
+      <p style="color:var(--text-dim);">
+        All payments are processed through encrypted, industry-standard providers.
+        We never see or store your card details. Questions about an order?
+        <a href="contact.html" style="color:var(--gold); text-decoration:underline;">Contact us</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="nav-brand" style="margin-bottom:16px;">
+            <span class="mark">RTE</span> Reliable Trend Enterprises
+          </div>
+          <p>The parent company behind ZeroStick, BudBox, and more. Trends you can trust &mdash; built and sold direct.</p>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="brands.html">Our Brands</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="privacy-policy.html">Privacy Policy</a>
+          <a href="delete-data.html">Delete My Data</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Reliable Trend Enterprises LLC. All rights reserved.</span>
+        <span>reliabletrendenterprises@gmail.com</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
