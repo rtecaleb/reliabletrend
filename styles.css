@@ -246,6 +246,28 @@ img { max-width: 100%; display: block; }
 .card h3 { font-size: 1.25rem; margin-bottom: 10px; color: var(--text); }
 .card p { color: var(--text-dim); font-size: 0.95rem; }
 
+.brand-card { padding: 0 0 28px; overflow: hidden; }
+.brand-card > :not(.product-img) { margin-left: 28px; margin-right: 28px; }
+.brand-card > :not(.product-img):first-child { margin-top: 28px; }
+.product-img {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  aspect-ratio: 16 / 11;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+.product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 18px;
+}
+.product-img--muted {
+  background: linear-gradient(135deg, var(--panel), var(--panel-2));
+}
 .brand-card .price {
   font-size: 1.4rem;
   font-weight: 800;
